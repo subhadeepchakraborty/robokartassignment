@@ -94,7 +94,7 @@ document.getElementById("right1").style.display="block";
 					<button  value="Login" name="Login" >LOG in</button></center></form>
         </div>
 <div id="signup" >
-  <form  action="robocart.php" method="post" autocomplete="on" onsubmit="validateForm()" name="form1">
+  <form  action="index.php" method="post" autocomplete="on" onsubmit="validateForm()" name="form1">
   			<center>	<h1> Sign up </h1>
   				<p>
   					<input id="name" name="name" required="required" type="text" placeholder="FULL NAME" />
@@ -129,7 +129,7 @@ document.getElementById("right1").style.display="block";
 //$dbname="qsMyHkfpFx";error_reporting(0);
 
 if (isset($_POST['Login']) ) {
-  header('location:robocart.php');
+  header('location:index.php');
 }
 if (isset($_POST['sign']) ) {
 $conn=mysqli_connect('remotemysql.com','Vn6HI9swkt','8YEUg3HjYl','Vn6HI9swkt');
@@ -154,7 +154,7 @@ function validateForm() {
     var y = document.forms["form1"]["password2"].value;
     var z = document.forms["form1"]["password3"].value;
 
-    if (y != z) {
+    if (y !== z) {
       alert("password and confirm password must same");
   }
 }
