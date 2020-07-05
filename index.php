@@ -94,7 +94,7 @@ document.getElementById("right1").style.display="block";
 					<button  value="Login" name="Login" >LOG in</button></center></form>
         </div>
 <div id="signup" >
-  <form  action="index.php" method="post" autocomplete="on" onsubmit="validateForm()" name="form1">
+  <form  action="index.php" method="post" autocomplete="on"  name="form1">
   			<center>	<h1> Sign up </h1>
   				<p>
   					<input id="name" name="name" required="required" type="text" placeholder="FULL NAME" />
@@ -145,17 +145,4 @@ mysqli_query($conn,$query);
 
 
 ?>
-<script>
-function validateForm() {
-  var x = document.forms["form1"]["mobile"].value;
-  if (x.length <10 ) {
-    alert("Mobile must be 10 digits");
-  }
-    var y = document.forms["form1"]["password2"].value;
-    var z = document.forms["form1"]["password3"].value;
 
-    if (y !== z) {
-      alert("password and confirm password must same");
-  }
-}
-</script>
