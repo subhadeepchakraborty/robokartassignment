@@ -139,7 +139,7 @@ $state=$_POST['state'];
 $password=$_POST['password2'];
 $password12=$_POST['password3'];
 
-if($password != $password12 || $mobile <=10  )
+if($password != $password12 || strlen($mobile) <=10  )
           {
             echo "<script type='text/javascript'>
             alert('password and confirm password and mobile no. sholod be 10')
