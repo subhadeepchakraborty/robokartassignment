@@ -81,7 +81,7 @@ document.getElementById("right1").style.display="block";
 <body >
   <div id="maindiv" >
 <div id="login" >
-  <form   autocomplete="on" method="post" action="https://robokartasiignment.herokuapp.com/robocart_validate.php">
+  <form   autocomplete="on" method="post" action="robocart_validate.php">
 
   	<center>
       <h1>LOGIN</h1>	<p>
@@ -94,7 +94,7 @@ document.getElementById("right1").style.display="block";
 					<button  value="Login" name="Login" >LOG in</button></center></form>
         </div>
 <div id="signup" >
-  <form  action="https://robokartasiignment.herokuapp.com/robocart.php" method="post" autocomplete="on" onsubmit="validateForm()" name="form1">
+  <form  action="robocart.php" method="post" autocomplete="on" onsubmit="validateForm()" name="form1">
   			<center>	<h1> Sign up </h1>
   				<p>
   					<input id="name" name="name" required="required" type="text" placeholder="FULL NAME" />
@@ -129,7 +129,7 @@ document.getElementById("right1").style.display="block";
 //$dbname="qsMyHkfpFx";error_reporting(0);
 
 if (isset($_POST['Login']) ) {
-  header('location:https://robokartasiignment.herokuapp.com/robocart.php');
+  header('location:robocart.php');
 }
 if (isset($_POST['sign']) ) {
 $conn=mysqli_connect('remotemysql.com','Vn6HI9swkt','8YEUg3HjYl','Vn6HI9swkt');
