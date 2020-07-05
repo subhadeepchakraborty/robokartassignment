@@ -145,13 +145,13 @@ if($password != $password12 || strlen($mobile) <=10  )
             alert('password and confirm password and mobile no. sholod be 10')
             </script>";
           }
-else{
+
 $query= "INSERT INTO robokart(Name,Mobile,state,password) VALUES('$name','$mobile','$state','$password')";
 mysqli_query($conn,$query);
 	echo "<script type='text/javascript'>
 alert('Submitted successfully')
 </script>";
-}
+
 }
 ?>
 
