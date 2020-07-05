@@ -30,7 +30,7 @@ if($num>=1)
           <tr>  <td>{$row['password']}</td></tr>
 
           </table>";
-echo "<a href='robocart.php'>LOG OUT</a>";
+echo "<a href='index.php'>LOG OUT</a>";
 }
 else {
 
