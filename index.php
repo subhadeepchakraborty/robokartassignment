@@ -137,15 +137,22 @@ $name =$_POST['name'];
 $mobile=$_POST['mobile'];
 $state=$_POST['state'];
 $password=$_POST['password2'];
+$password12=$_POST['password3'];
 
-
+if($password != $password12)
+          {
+            echo "<script type='text/javascript'>
+            alert('password and confirm password')
+            </script>";
+          }
+else{
 $query= "INSERT INTO robokart(Name,Mobile,state,password) VALUES('$name','$mobile','$state','$password')";
 mysqli_query($conn,$query);
 	echo "<script type='text/javascript'>
 alert('Submitted successfully')
 </script>";
 }
-
+}
 
 ?>
 
